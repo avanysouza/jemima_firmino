@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100&family=Inter:wght@100;500&family=Montserrat:wght@100;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+  color: #000;
+}
+
+html {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p{
+  font-size: 18px;
+  align-items: flex-end;
+  line-height: 25px;
+}
+
+.cabecalho {
+  background-color: #f8f0ec;
+}
+
+nav {
+  max-width: 1120px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_jemima {
+  width: 12.5%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  color: #e28b5f;
+}
+
+.menu_item{
+  font-size: 18px;
+  color: #e28b5f;
+}
+
+.redes_sociais {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  padding: 2rem 4rem;
+}
+
+.container-principal > img {
+  width: 28%;
+}
+
+.principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -1.5rem;
+  gap: 3.5rem;
+  padding: 3rem;
+  overflow: clip;
+  
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.principal-imagens {
+  max-width: 50%;
+  column-count: 3;
+  column-gap: 1rem;
+  margin: -1rem;
+}
+
+.principal-imagens > figure > img {
+  width: 120px;
+  border-radius: 0.5rem;
+}
+
+.principal-imagens > figure > img:hover {
+  scale: 1.2;
+  transition: 0.5s;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+hr {
+  border-color: #a45a49;
+}
+
+.principal_sub-titulo {
+  color: #000000;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 2rem;
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.depoimentos-cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.depoimentos-titulos {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.depoimentos-subtitulos {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.depoimentos-container{
+  padding: 0rem 10rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.depoimentos-card{
+  background: #f8f0ec;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  flex-basis: 29rem;
+  margin-top: 2rem;
+}
+
+.depoimentos-card-cabecalho{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.depoimentos-card-cabecalho-detalhes{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.depoimentos-titulo{
+font-family: Montserrat;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+text-align: center;
+}
+
+.depoimentos-texto, .depoimentos-autor{
+  text-align: center;
+}
+
+.rodape{
+  width: 100%;
+  margin: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rodape_conteudo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.logo_footer{
+  width: 5%;
+}
+
+.rodape_titulo{
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+}
+
+.perfil_jemima{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  gap: 0.5rem;
+}
+
+.perfil_conteudo{
+  display: flex;
+  flex-direction: row;
+  margin: 3rem;
+  max-width: 1120px;
+  height: 60vh;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 0rem;
+  overflow: clip;
+
+}
+
+.foto_perfil{
+  width: 20%;
+}
+
+.perfil_conteudo_texto{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.perfil_titulo{
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.perfil_texto{
+  color: #000000;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.servicos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 3rem;
+  gap: 0.5rem;
+}
+
+.servicos_conteudo{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.foto_servicos{
+  width: 40%;
+}
+
+.servicos_conteudo_texto{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.servicos-imagens {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  gap: 4rem;
+}
+
+.servicos-imagens > figure > img {
+  width: 350px;
+  border-radius: 0.5rem;
+}
+
+.servicos-imagens > figure > img:hover {
+  scale: 1.2;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px ) {
+
+  .cabecalho{
+    display: none;
+  }
+
+  .container-principal{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conteudo-principal{
+    align-items: center;
+    margin: 0.5rem;
+    text-align: center;
+  }
+
+  .principal{
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .principal-imagens{
+    align-items: center;
+    margin-right: 2rem;
+  }
+
+  .depoimentos-container{
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rodape{
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+}

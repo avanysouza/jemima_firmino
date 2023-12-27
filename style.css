@@ -24,14 +24,19 @@ ul {
   list-style: none;
 }
 
-p{
+p {
   font-size: 18px;
   align-items: flex-end;
   line-height: 25px;
 }
 
+header {
+  width: 100%;
+}
+
 .cabecalho {
   background-color: #f8f0ec;
+  width: 100%;
 }
 
 nav {
@@ -56,7 +61,7 @@ nav {
   color: #e28b5f;
 }
 
-.menu_item{
+.menu_item {
   font-size: 18px;
   color: #e28b5f;
 }
@@ -94,7 +99,6 @@ main {
   gap: 3.5rem;
   padding: 3rem;
   overflow: clip;
-  
 }
 
 .conteudo-principal {
@@ -138,7 +142,6 @@ hr {
   font-style: normal;
 }
 
-
 .depoimentos {
   display: flex;
   flex-direction: column;
@@ -170,14 +173,14 @@ hr {
   font-weight: 400;
 }
 
-.depoimentos-container{
+.depoimentos-container {
   padding: 0rem 10rem;
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
 
-.depoimentos-card{
+.depoimentos-card {
   background: #f8f0ec;
   padding: 2rem;
   border-radius: 0.5rem;
@@ -189,32 +192,33 @@ hr {
   margin-top: 2rem;
 }
 
-.depoimentos-card-cabecalho{
+.depoimentos-card-cabecalho {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
 }
 
-.depoimentos-card-cabecalho-detalhes{
+.depoimentos-card-cabecalho-detalhes {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.depoimentos-titulo{
-font-family: Montserrat;
-font-size: 1rem;
-font-style: normal;
-font-weight: 700;
-text-align: center;
-}
-
-.depoimentos-texto, .depoimentos-autor{
+.depoimentos-titulo {
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
   text-align: center;
 }
 
-.rodape{
+.depoimentos-texto,
+.depoimentos-autor {
+  text-align: center;
+}
+
+.rodape {
   width: 100%;
   margin: auto;
   padding: 1.5rem;
@@ -224,25 +228,24 @@ text-align: center;
   gap: 1rem;
 }
 
-.rodape_conteudo{
+.rodape_conteudo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-.logo_footer{
+.logo_footer {
   width: 5%;
 }
 
-.rodape_titulo{
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
+.rodape_titulo {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
 }
 
-.perfil_jemima{
+.perfil_jemima {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -250,7 +253,7 @@ font-weight: 500;
   gap: 0.5rem;
 }
 
-.perfil_conteudo{
+.perfil_conteudo {
   display: flex;
   flex-direction: row;
   margin: 3rem;
@@ -261,26 +264,25 @@ font-weight: 500;
   gap: 4rem;
   padding: 0rem;
   overflow: clip;
-
 }
 
-.foto_perfil{
+.foto_perfil {
   width: 20%;
 }
 
-.perfil_conteudo_texto{
+.perfil_conteudo_texto {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.perfil_titulo{
+.perfil_titulo {
   font-family: Montserrat;
   font-size: 2rem;
   font-weight: 800;
 }
 
-.perfil_texto{
+.perfil_texto {
   color: #000000;
   font-family: Inter;
   font-size: 1.2rem;
@@ -288,7 +290,7 @@ font-weight: 500;
   font-style: normal;
 }
 
-.servicos{
+.servicos {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -296,22 +298,21 @@ font-weight: 500;
   gap: 0.5rem;
 }
 
-.servicos_conteudo{
+.servicos_conteudo {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
 
-.foto_servicos{
+.foto_servicos {
   width: 40%;
 }
 
-.servicos_conteudo_texto{
+.servicos_conteudo_texto {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-
 
 .servicos-imagens {
   display: flex;
@@ -331,44 +332,47 @@ font-weight: 500;
   transition: 0.5s;
 }
 
-@media screen and (max-width: 768px ) {
-
-  .cabecalho{
-    display: none;
+@media screen and (max-width: 768px) {
+  .cabecalho {
+    position: fixed;
   }
 
-  .container-principal{
+  .container-principal {
     flex-direction: column;
     align-items: center;
+    margin-top: 4rem;
   }
 
-  .conteudo-principal{
+  .conteudo-principal {
     align-items: center;
     margin: 0.5rem;
     text-align: center;
   }
 
-  .principal{
+  .principal {
     flex-direction: column;
     align-items: center;
     margin: auto;
   }
 
-  .principal-imagens{
+  .principal-imagens {
     align-items: center;
     margin-right: 2rem;
   }
 
-  .depoimentos-container{
+  .depoimentos-container {
     flex-direction: row;
     align-items: center;
     text-align: center;
-  }
-
-  .rodape{
-    flex-direction: column;
-    align-items: center;
     margin: auto;
+    padding: 3rem;
   }
 
+  .depoimentos-card {
+    width: 25%;
+  }
+
+  .rodape {
+    display: none;
+  }
 }

@@ -183,15 +183,9 @@ hr {
 }
 
 .depoimentos-card {
-  background: #f8f0ec;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  display: grid;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  flex-basis: 29rem;
-  margin-top: 2rem;
+  background-color: rgb(169, 136, 136);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -235,25 +229,17 @@ hr {
   font-weight: 500;
 }
 
-.perfil_jemima {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: auto;
-  gap: 0.5rem;
-}
 
 .perfil_conteudo {
   display: flex;
-  flex-direction: row;
-  margin: 3rem;
-  max-width: 1120px;
-  height: 60vh;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 2rem;
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
-  padding: 0rem;
-  overflow: clip;
+ 
+
 }
 
 .foto_perfil {
@@ -322,47 +308,76 @@ hr {
   transition: 0.5s;
 }
 
-@media screen and (max-width: 768px) {
-  .cabecalho {
-    position: fixed;
+@media (max-width: 920px) {
+  
+
+  .cabecalho .menu{
+    display: none;
   }
 
   .container-principal {
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 4rem;
   }
 
-  .conteudo-principal {
+  .principal{
+    flex-direction: column;
+    padding: 2rem 0;
     align-items: center;
-    margin: 0.5rem;
+  }
+
+  .principal h1, h2, p{
     text-align: center;
   }
 
-  .principal {
+  .depoimentos {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    margin-top: 4rem;
   }
 
-  .principal-imagens {
-    align-items: center;
-    margin-right: 2rem;
+  .depoimentos-subtitulos{
+    display: none;
   }
 
-  .depoimentos-container {
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    padding: 3rem;
+  .depoimentos-card-titulo{
+    margin-bottom: 2rem;
   }
 
-  .depoimentos-card {
-    width: 25%;
+  .depoimentos-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
   }
 
   .rodape {
     display: none;
+  }
+
+  .perfil_conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .perfil_conteudo h2{
+    text-align: center;
+  }
+
+  .servicos{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-left: 2rem;
+  }
+
+  .servicos-imagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

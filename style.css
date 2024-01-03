@@ -164,6 +164,7 @@ hr {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
+  align-items: center;
 }
 
 .depoimentos-subtitulos {
@@ -171,6 +172,7 @@ hr {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  align-items: center;
 }
 
 .depoimentos-container {
@@ -184,7 +186,7 @@ hr {
   background: #f8f0ec;
   padding: 2rem;
   border-radius: 0.5rem;
-  display: flex;
+  display: grid;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
@@ -192,20 +194,8 @@ hr {
   margin-top: 2rem;
 }
 
-.depoimentos-card-cabecalho {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: end;
-}
 
-.depoimentos-card-cabecalho-detalhes {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.depoimentos-titulo {
+.depoimentos-card-titulo {
   font-family: Montserrat;
   font-size: 1rem;
   font-style: normal;
@@ -213,8 +203,8 @@ hr {
   text-align: center;
 }
 
-.depoimentos-texto,
-.depoimentos-autor {
+.depoimentos-card-texto,
+.depoimentos-card-autor {
   text-align: center;
 }
 
